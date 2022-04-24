@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: boat-service
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  security:
+    oauth2:
+      resourceserver:
+        jwk:
+          issuer-uri: https://sebastien-andre.eu.auth0.com/
+          jwk-set-uri: https://sebastien-andre.eu.auth0.com/.well-known/jwks.json
